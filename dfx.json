@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "hellow_backend": {
+      "main": "src/hellow_backend/main.mo",
+      "type": "motoko"
+    },
+    "hellow_frontend": {
+      "dependencies": [
+        "hellow_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/hellow_frontend/src/index.html"
+      },
+      "source": [
+        "src/hellow_frontend/assets",
+        "dist/hellow_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
